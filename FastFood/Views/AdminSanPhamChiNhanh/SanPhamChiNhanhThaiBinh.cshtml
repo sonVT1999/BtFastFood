@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "SanPhamChiNhanhThaiBinh";
+    Layout = "~/Views/Shared/LayoutAdmin.cshtml";
+}
+
+@using FastFood.Models
+@model IEnumerable<SANPHAM_CUAHANG>
+
+<div class="table-agile-info">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            CHI NHÁNH THÁI BÌNH
+        </div>
+        <div>
+            <button class="btn btn-outline-primary"><a href="@Url.Action("Add", "AdminSanPhamChiNhanh")"><i class="fas fa-plus-circle" style="font-size: 150%"></i></a></button>
+
+            <form action="Search" method="post">
+                <button type="submit" class="btn btn-outline-primary sel" style="float: right">Search</button>
+                <input type="text" class="form-control search" placeholder=" Search" style="float: right" name="Ten">
+            </form>
+        </div>
+
+        <div>
+            <table class="table" ui-jq="footable" ui-options='{
+        "paging": {
+          "enabled": true
+        },
+        "filtering": {
+          "enabled": true
+        },
+        "sorting": {
+          "enabled": true
+        }}'>
+                <thead>
+                    <tr>
+                        <th data-breakpoints="xs">Mã Sản Phẩm CH</th>
+                        <th>Số Lượng</th>
+                        <th>Mã Sản Phẩm</th>
+                        <th>Mã Cửa Hàng</th>
+                        <th colspan="2">Chức Năng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (SANPHAM_CUAHANG item in Model)
+                    {
+                        <tr data-expanded="true">
+                            <td>@item.MaSPCH</td>
+                            <td>@item.SoLuong</td>
+                            <td>@item.MaSanPham</td>
+                            <td>@item.MaCuaHang</td>
+                            <td><a href="/AdminSanPhamChiNhanhThaiBinh/Edit/@item.MaSPCH"><i class="fas fa-edit" style="font-size: 150%"></i></a></td>
+                            <td><a href="/AdminSanPhamChiNhanhThaiBinh/Delete/@item.MaSPCH"><i class="fa fa-trash" style="font-size: 150%"></i></a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

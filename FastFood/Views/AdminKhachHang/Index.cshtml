@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/LayoutAdmin.cshtml";
+}
+
+@using FastFood.Models
+@model IEnumerable<KHACHHANG>
+
+<div class="table-agile-info">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            KHÁCH HÀNG
+        </div>
+        <div>
+            <button class="btn btn-outline-primary"><a href="@Url.Action("Add", "AdminKhachHang")"><i class="fas fa-plus-circle" style="font-size: 150%"></i></a></button>
+
+            <form action="Search" method="post">
+                <button type="submit" class="btn btn-outline-primary sel" style="float: right">Search</button>
+                <input type="text" class="form-control search" placeholder=" Search" style="float: right" name="Ten">
+            </form>
+        </div>
+
+        <div>
+            <table class="table" ui-jq="footable" ui-options='{
+        "paging": {
+          "enabled": true
+        },
+        "filtering": {
+          "enabled": true
+        },
+        "sorting": {
+          "enabled": true
+        }}'>
+                <thead>
+                    <tr>
+                        <th data-breakpoints="xs">MÃ KH</th>
+                        <th>Tên</th>
+                        <th>Tài Khoản</th>
+                        <th>Mật Khẩu</th>
+                        <th colspan="2">Chức Năng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (KHACHHANG item in Model)
+                    {
+                    <tr data-expanded="true">
+                        <td>@item.MaKhachHang</td>
+                        <td>@item.Ten</td>
+                        <td>@item.TaiKhoan</td>
+                        <td>@item.MaKhachHang</td>
+                        <td><a href="/AdminKhachHang/Edit/@item.MaKhachHang"><i class="fas fa-edit" style="font-size: 150%"></i></a></td>
+                        <td><a href="/AdminKhachHang/Delete/@item.MaKhachHang"><i class="fa fa-trash" style="font-size: 150%"></i></a></td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+

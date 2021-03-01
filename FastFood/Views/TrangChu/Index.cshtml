@@ -1,0 +1,445 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Fast Food</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/Content/trangchu/css/reset.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/Content/trangchu/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/trangchu/css/global.css">
+    <link rel="stylesheet" type="text/css" href="/Content/trangchu/css/style.css">
+</head>
+<body>
+    <div id="site">
+        <div id="wrapper">
+            <div id="header">
+                <div class="wp-inner ">
+                    <a href="" id="logo"><img src="/Content/trangchu/img/logo-02.png" /></a>
+                    <ul id="main-menu" class="fl-left">
+                        <li><a href="">Trang chủ</a></li>
+                        <li><a href="#list-menu">Thực đơn</a></li>
+                        <li><a href="#promotion">Khuyến mại</a></li>
+                        <li><a href="#feedback">Feed Back</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#footer">Liên hệ</a></li>
+                        <li><a href=""><i class="fa fa-cart-plus"></i> Giỏ Hàng</a></li>
+                        <li><a href="@Url.Action("Index", "Login")" style="font-size: 17px;">@*<i class="fa fa-phone"></i>*@Login</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--end header-->
+
+            <div id="wp-content" class="wp-inner clearfix">
+                <img src="/Content/trangchu/img/banner-01.jpg">
+                <div id="food-menu">
+                    <div class="title-menu" class="clearfix" style="margin-top: 10px;">
+                        <img src="/Content/trangchu/img/icon/line.png" class="fl-left" style="margin-left: 410px; " />
+                        <p class="title-menu fl-left"> Thực đơn</p>
+                        <img src="/Content/trangchu/img/icon/line.png" class="fl-left" />
+                    </div>
+                    <div id="list-menu">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="/Content/trangchu/img/icon/pizza.png" />
+                                    <p>Pizza</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="/Content/trangchu/img/icon/spaghetti.png" />
+                                    <p>Mỳ Ý</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="/Content/trangchu/img/icon/salad.png" />
+                                    <p>Salad</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="/Content/trangchu/img/icon/khaivi.png" />
+                                    <p>Khai Vị</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="/Content/trangchu/img/icon/drinks.png" />
+                                    <p>Đồ Uống</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="/Content/trangchu/img/icon/combo.png" />
+                                    <p>Combo</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="/Content/trangchu/img/icon/other.png" />
+                                    <p>Other</p>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div id="list-food">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="/Content/trangchu/img/pizza/pizza1.png">
+                                <h4>Beefy Pizza</h4>
+                                <span class="price"> 110.000đ</span>
+                                <button type="button" class="btn btn-info">Chi tiết</button>
+                                <button type="button" class="btn btn-danger">
+                                    Mua
+                                    <span class="fa fa-cart-plus"></span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/Content/trangchu/img/pizza/pizza2.png">
+                                <h4>Hawall Pizza</h4>
+                                <span class="price"> 110.000đ</span>
+                                <button type="button" class="btn btn-info">Chi tiết</button>
+                                <button type="button" class="btn btn-danger">
+                                    Mua
+                                    <span class="fa fa-cart-plus"></span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/Content/trangchu/img/pizza/pizza3.png">
+                                <h4>Salami Pizza</h4>
+                                <span class="price"> 110.000đ</span>
+                                <button type="button" class="btn btn-info">Chi tiết</button>
+                                <button type="button" class="btn btn-danger">
+                                    Mua
+                                    <span class="fa fa-cart-plus"></span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/Content/trangchu/img/pizza/pizza4.png">
+                                <h4>Chorozo Pizza</h4>
+                                <span class="price"> 110.000đ</span>
+                                <button type="button" class="btn btn-info">Chi tiết</button>
+                                <button type="button" class="btn btn-danger">
+                                    Mua
+                                    <span class="fa fa-cart-plus"></span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/Content/trangchu/img/pizza/pizza5.png">
+                                <h4>Meat lovers Pizza</h4>
+                                <span class="price"> 110.000đ</span>
+                                <button type="button" class="btn btn-info">Chi tiết</button>
+                                <button type="button" class="btn btn-danger">
+                                    Mua
+                                    <span class="fa fa-cart-plus"></span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/Content/trangchu/img/pizza/pizza6.png">
+                                <h4>BBQ Chicken Pizza</h4>
+                                <span class="price"> 110.000đ</span>
+                                <button type="button" class="btn btn-info">Chi tiết</button>
+                                <button type="button" class="btn btn-danger">
+                                    Mua
+                                    <span class="fa fa-cart-plus"></span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/Content/trangchu/img/pizza/pizza7.png">
+                                <h4>Chiken Curry Pizza</h4>
+                                <span class="price"> 110.000đ</span>
+                                <button type="button" class="btn btn-info">Chi tiết</button>
+                                <button type="button" class="btn btn-danger">
+                                    Mua
+                                    <span class="fa fa-cart-plus"></span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/Content/trangchu/img/pizza/pizza8.png">
+                                <h4>Mexican Pizza</h4>
+                                <span class="price"> 110.000đ</span>
+                                <button type="button" class="btn btn-info">Chi tiết</button>
+                                <button type="button" class="btn btn-danger">
+                                    Mua
+                                    <span class="fa fa-cart-plus"></span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/Content/trangchu/img/pizza/pizza9.png">
+                                <h4>Veggie Pizza</h4>
+                                <span class="price"> 110.000đ</span>
+                                <button type="button" class="btn btn-info">Chi tiết</button>
+                                <button type="button" class="btn btn-danger">
+                                    Mua
+                                    <span class="fa fa-cart-plus"></span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/Content/trangchu/img/pizza/pizza10.png">
+                                <h4> Margherita Pizza</h4>
+                                <span class="price"> 110.000đ</span>
+                                <button type="button" class="btn btn-info">Chi tiết</button>
+                                <button type="button" class="btn btn-danger">
+                                    Mua
+                                    <span class="fa fa-cart-plus"></span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/Content/trangchu/img/pizza/pizza11.png">
+                                <h4> Michigan Pizza</h4>
+                                <span class="price"> 110.000đ</span>
+                                <button type="button" class="btn btn-info">Chi tiết</button>
+                                <button type="button" class="btn btn-danger">
+                                    Mua
+                                    <span class="fa fa-cart-plus"></span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/Content/trangchu/img/pizza/pizza12.png">
+                                <h4> Seafood Pizza</h4>
+                                <span class="price"> 110.000đ</span>
+                                <button type="button" class="btn btn-info">Chi tiết</button>
+                                <button type="button" class="btn btn-danger">
+                                    Mua
+                                    <span class="fa fa-cart-plus"></span>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="promotion">
+                    <div class="title-menu" class="clearfix" style="margin-top: 10px;">
+                        <img src="/Content/trangchu/img/icon/line.png" class="fl-left" style="margin-left: 410px; " />
+                        <p class="title-menu fl-left"> Khuyến mại</p>
+                        <img src="/Content/trangchu/img/icon/line.png" class="fl-left" />
+                    </div>
+                    <div id="content-promotion">
+                        <br><br>
+                        <h2>
+                            Combo siêu hấp dẫn<h2>
+                                <ul>
+                                    <li>
+                                        <img src="/Content/trangchu/img/combo/combo1.png">
+                                        <h3>Combo 01</h3>
+                                        <button type="button" class="btn btn-danger">
+                                            Mua
+                                            <span class="fa fa-cart-plus"></span>
+                                        </button><br>
+                                        <div class="detail-promotion">
+                                            <p class="fl-left">Cho 2 người</p>
+                                            <p style="color: red;"> 139.000đ</p>
+                                        </div>
+                                        <p class="sub-detail">1 Pizza size S + 1 Salad + 1 Coca 390ml </p>
+                                    </li>
+                                    <li>
+                                        <img src="/Content/trangchu/img/combo/combo2.png">
+                                        <h3>Combo 02</h3>
+                                        <button type="button" class="btn btn-danger">
+                                            Mua
+                                            <span class="fa fa-cart-plus"></span>
+                                        </button><br>
+                                        <div class="detail-promotion">
+                                            <p class="fl-left">Cho 3 người</p>
+                                            <p style="color: red;"> 179.000đ</p>
+                                        </div>
+                                        <p class="sub-detail">1 Pizza size L + 1 Mỳ Ý + 1 Coca 390ml </p>
+
+                                    </li>
+                                    <li>
+                                        <img src="/Content/trangchu/img/combo/combo3.png">
+                                        <h3>Combo 03</h3>
+                                        <button type="button" class="btn btn-danger">
+                                            Mua
+                                            <span class="fa fa-cart-plus"></span>
+                                        </button><br>
+                                        <div class="detail-promotion">
+                                            <p class="fl-left">Cho 4 người</p>
+                                            <p style="color: red;"> 269.000đ</p>
+                                        </div>
+                                        <p class="sub-detail">1 Pizza size L + 1 Pizza size M + 1 Mỳ Ý + 1 Coca 390ml </p>
+                                    </li>
+                                    <li>
+                                        <img src="/Content/trangchu/img/combo/combo4.png">
+                                        <h3>Combo 04</h3>
+                                        <button type="button" class="btn btn-danger">
+                                            Mua
+                                            <span class="fa fa-cart-plus"></span>
+                                        </button><br>
+                                        <div class="detail-promotion">
+                                            <p class="fl-left">Cho 6 người</p>
+                                            <p style="color: red;"> 429.000đ</p>
+                                        </div>
+                                        <p class="sub-detail">3 Pizza size L + 1 Mỳ Ý + 1 Khoai tây chiên + 1 Coca 1.5l </p>
+                                    </li>
+                                </ul>
+                    </div>
+                </div>
+                <div id="feedback">
+                    <div class="title-menu" class="clearfix" style="margin-top: 10px;">
+                        <img src="/Content/trangchu/img/icon/line.png" class="fl-left" style="margin-left: 410px; " />
+                        <p class="title-menu fl-left"> Feed-back</p>
+                        <img src="/Content/trangchu/img/icon/line.png" class="fl-left" />
+                    </div>
+                    <div id="content-feedback">
+                        <ul>
+                            <li>
+                                <img src="/Content/trangchu/img/customer/cus1.jpg" />
+                                <p class="comment">" mì nhiều ú ụ mà mình thấy sợi mì ở đây ngon hơn những chõ khác. sốt bò băm mà có nhiều bò nước sốt ngon .tóm lại ăn mì ở đây giá hợp lý mà ngon "</p>
+                                <p class="nickname">Mạnh Nguyễn </p>
+                            </li>
+                            <li>
+                                <img src="/Content/trangchu/img/customer/cus2.jpg" />
+                                <p class="comment">" pizza ngon bên ngoài trồn khá đẹp mắt và ngon miệng và khá to. vỏ bánh có đọ dày vừa phải không bị mỏng quá và giòn vị ăn ngon "</p>
+                                <p class="nickname">Huy Hoàng </p>
+                            </li>
+                            <li>
+                                <img src="/Content/trangchu/img/customer/cus3.jpg" />
+                                <p class="comment">" èo ôi bánh ở đây ăn ngon vãi chưởng ế, ăn xong nghiện hơn cả heroin "</p>
+                                <p class="nickname">Nguyễn Hoài </p>
+                            </li>
+                            <li>
+                                <img src="/Content/trangchu/img/customer/cus4.jpg" />
+                                <p class="comment">" chỉ có 110k một cái pizza to ú ú lại còn có mã giảm giá 50% nữa tính ra chi mất hơn 50k mà có bánh ngon để ăn nhân viên giao hàng còn nhanh nữa chứ "</p>
+                                <p class="nickname">Thị Nhung </p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div id="blog">
+                    <div class="title-menu" class="clearfix" style="margin-top: 10px;">
+                        <img src="/Content/trangchu/img/icon/line.png" class="fl-left" style="margin-left: 410px; " />
+                        <p class="title-menu fl-left"> Blogs</p>
+                        <img src="/Content/trangchu/img/icon/line.png" class="fl-left" />
+                    </div>
+                    <div ="content-blog">
+                        <h2>
+                            Blog mới nhất<h2>
+                                <ul>
+                                    <li>
+                                        <img src="/Content/trangchu/img/blog/blog_2.jpg">
+                                        <h3><a href="#" title="Top những loại mì ý ngon nhất Hà Nội">Top những loại mì ý ngon nhất Hà Nội</a></h3>
+                                        <p class="detail-blog">Mỳ ý sốt bò băm, mỳ ý sốt kem, mỳ ý sốt thịt bò, mỳ...</p>
+                                        <div class="blog-info">
+                                            <p class="time">09/03/2019</p>
+                                            <p class="comment-count"> 0 Bình luận </p>
+                                            <p><a href="" class="blog-detail" title="Đọc chi tiết"> Đọc chi tiết ></a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="/Content/trangchu/img/blog/blog_2.jpg">
+                                        <h3><a href="#" title="Pizza chay tốt cho sức khỏe">Pizza chay tốt cho sức khỏe</a></h3>
+                                        <p class="detail-blog">Pizza chay với thành phần bao gồm súp lơ, bơ tự nhiên...</p>
+                                        <div class="blog-info">
+                                            <p class="time">08/03/2019</p>
+                                            <p class="comment-count"> 0 Bình luận </p>
+                                            <p><a href="" class="blog-detail" title="Đọc chi tiết"> Đọc chi tiết ></a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="/Content/trangchu/img/blog/blog_2.jpg">
+                                        <h3><a href="#" title="Siêu phẩm pizza bơ sữa">Siêu phẩm pizza bơ sữa</a></h3>
+                                        <p class="detail-blog">Món ăn lạ trong những ngày đông đang thu hút các bạn trẻ là món...</p>
+                                        <div class="blog-info">
+                                            <p class="time">07/03/2019</p>
+                                            <p class="comment-count"> 0 Bình luận </p>
+                                            <p><a href="" class="blog-detail" title="Đọc chi tiết"> Đọc chi tiết ></a></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                    </div>
+                </div>
+                <div id="properties">
+                    <ul>
+                        <li>
+                            <img src="/Content/trangchu/img/icon/diet.png">
+                            <p class="title-properties">Chất lượng</p>
+                            <p class="detail-properties">Chú trọng khâu tuyển chọn đội ngũ đầu bếp chuyên nghiệp, thực đơn của Pizza Express luôn được đổi mới, đa dạng với pizza nhiều hương vị, sandwich, mỳ ý và các món ăn nhanh khác.</p>
+                        </li>
+                        <li>
+                            <img src="/Content/trangchu/img/icon/meal.png">
+                            <p class="title-properties">Đúng giờ</p>
+                            <p class="detail-properties">Để tăng cường sự tin tưởng và yên tâm với khách hàng, Pizza Express cam kết luôn giao hàng đúng giờ và chi phí giao hàng rẻ nhất để đảm bảo khách hàng có thể nhận bánh trong thời gian nhanh nhất.</p>
+                        </li>
+                        <li>
+                            <img src="/Content/trangchu/img/icon/chef-hat.png">
+                            <p class="title-properties">Take away</p>
+                            <p class="detail-properties">Lựa chọn cho mình một hướng đi mới để tạo nên sự khác biệt, mô hình Pizza take away - pizza mang đi giúp khách hàng tiết kiệm thời gian, đem đến sự tiện lợi tối ưu trong việc lựa chọn, thanh toán, đóng gói và nhận hàng.</p>
+                        </li>
+                        <li>
+                            <img src="/Content/trangchu/img/icon/waiter.png">
+                            <p class="title-properties">Chuyên nghiệp</p>
+                            <p class="detail-properties">Cùng với đội ngũ nhân viên mang đầy sức trẻ và nhiệt huyết, chúng tôi luôn mong muốn đem lại cho khách hàng của mình chất lượng dịch vụ tốt nhất, luôn lắng nghe và chăm sóc những nhu cầu dù là nhỏ nhất của Quý khách</p>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+            <!--end containt-->
+
+            <div id="footer" class="clearfix">
+
+                <div id="about-us">
+                    <img src="/Content/trangchu/img/logo-02.png">
+                    <p class="title-about-us">Chuỗi cửa hàng đồ ăn nhanh FastFood</p>
+                    <ul>
+                        <li>> Để đặt hàng vui lòng liên hệ qua số tổng đài: 0123456789</li>
+                        <li>> Để phản ánh chất lượng dịch vụ, vui lòng gọi số:0987654321</li>
+                        <li>> Email: fastfood@gmail.com</li>
+                        <li>> Chính sách bảo mật thông tin cá nhân</li>
+                        <li>> Chính sách thanh toán</li>
+                    </ul>
+                </div>
+                <div id="address">
+                    <p>Địa chỉ</p>
+                    <ul>
+                        <li>> Cơ sở 1: Tp. Phủ Lý - Tỉnh Hà Nam</li>
+                        <li>> Cơ sở 2: Tp. Thái Bình - Tỉnh Thái Bình</li>
+                        <li>> Cơ sở 3: Tp. Việt Trì - Tỉnh Phú Thọ</li>
+                        <li>> Cơ sở 4: Tp. Quỳ Hợp - Tỉnh Nghệ An</li>
+                    </ul>
+                </div>
+            </div>
+            <!--end footer-->
+            <div id="copyright" class="wp-inner">
+                <p class="copyright"> © 2020 All right reserved - FastFood</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

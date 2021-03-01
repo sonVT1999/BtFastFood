@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/LayoutAdmin.cshtml";
+}
+
+@using FastFood.Models
+@model IEnumerable<PHIEUNHAP>
+
+<div class="table-agile-info">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            PHIẾU NHẬP HÀNG
+        </div>
+        <div>
+            <button class="btn btn-outline-primary"><a href="@Url.Action("Add", "AdminPhieuNhap")"><i class="fas fa-plus-circle" style="font-size: 150%"></i></a></button>
+
+            <form action="Search" method="post">
+                <button type="submit" class="btn btn-outline-primary sel" style="float: right">Search</button>
+                <input type="text" class="form-control search" placeholder=" Search" style="float: right" name="MaNguoiDung">
+            </form>
+        </div>
+
+        <div>
+            <table class="table" ui-jq="footable" ui-options='{
+        "paging": {
+          "enabled": true
+        },
+        "filtering": {
+          "enabled": true
+        },
+        "sorting": {
+          "enabled": true
+        }}'>
+                <thead>
+                    <tr>
+                        <th data-breakpoints="xs">Mã Phiếu Nhập</th>
+                        <th>Ngày Viết</th>
+                        <th>Ghi Chú</th>
+                        <th>Mã Nhà cung cấp</th>
+                        <th>Mã Người Dùng</th>
+                        <th colspan="2">Chức Năng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (PHIEUNHAP item in Model)
+                    {
+                        <tr data-expanded="true">
+                            <td>@item.MaPhieuNhap</td>
+                            <td>@item.NgayViet</td>
+                            <td>@item.GhiChu</td>
+                            <td>@item.MaNCC</td>
+                            <td>@item.MaNguoiDung</td>
+                            <td><a href="/AdminPhieuNhap/Delete/@item.MaPhieuNhap"><i class="fa fa-trash" style="font-size: 150%"></i></a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+

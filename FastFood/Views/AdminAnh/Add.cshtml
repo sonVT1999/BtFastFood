@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/LayoutAdmin.cshtml";
+}
+
+
+@using FastFood.Models;
+@model ANH
+<div class="container padding">
+    <div class="container padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h3 class="display-5">Thêm Ảnh</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <form action="/Bill/ThemHoaDon" method="post">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="sel1">
+                            <h6 class="display-6">Link Ảnh</h6>
+                        </label>
+                        <input type="text" class="form-control form-control-sm"
+                               placeholder="link ảnh" name="LinkAnh">
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="sel1">
+                            <h6 class="display-6">Mã Sản Phẩm</h6>
+                        </label>
+                        <input type="text" class="form-control form-control-sm"
+                               placeholder="vị trí" name="MaSanPham">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" value="ThemHD">Thêm</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
